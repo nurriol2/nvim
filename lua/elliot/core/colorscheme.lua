@@ -1,6 +1,6 @@
-local status, _ = pcall(vim.cmd, "colorscheme nightfly")
+-- Lua initialization file
+local status, _ = pcall(vim.cmd, "colorscheme moonfly")
 if not status then
     print("Colorscheme not found!")
     return
 end
-

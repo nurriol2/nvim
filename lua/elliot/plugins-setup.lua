@@ -31,8 +31,7 @@ return packer.startup(function(use)
     use("wbthomason/packer.nvim")
 
     -- Install colorscheme
-    use("bluz71/vim-nightfly-guicolors")
-
+    use { "bluz71/vim-moonfly-colors", as = "moonfly" }
 
 
 
