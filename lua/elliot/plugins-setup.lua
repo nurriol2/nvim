@@ -24,3 +24,20 @@ local status, packer = pcall(require, "packer")
 if not status then
     return
 end
+
+-- Configure plugins
+return packer.startup(function(use)
+    -- Install Packer
+    use("wbthomason/packer.nvim")
+
+    -- Install colorscheme
+    use("bluz71/vim-nightfly-guicolors")
+
+
+
+
+    -- Suggested by the Packer docs
+    if packer_bootstrap then
+        require("packer").sync()
+    end
+end)
