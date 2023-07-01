@@ -19,3 +19,8 @@ vim.cmd([[
     autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
   augroup end
 ]])
+
+local status, packer = pcall(require, "packer") 
+if not status then
+    return
+end
