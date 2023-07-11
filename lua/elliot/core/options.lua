@@ -21,6 +21,8 @@ opt.smartcase = true
 opt.iskeyword:append("-")
 -- Show cursor line
 opt.cursorline = true
+-- Show colorcolumn at specified character limit
+opt.colorcolumn = "79"
 
 -- Configure Vim appearance
 opt.termguicolors = true
