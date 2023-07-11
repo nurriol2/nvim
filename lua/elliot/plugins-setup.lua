@@ -33,7 +33,6 @@ return packer.startup(function(use)
     -- (Many other plugins rely on plenary)
     use("nvim-lua/plenary.nvim")
 
-
     -- Install colorscheme
     use { "bluz71/vim-moonfly-colors", as = "moonfly" }
 
@@ -49,10 +48,12 @@ return packer.startup(function(use)
     -- (Comfy) Commenting
     use("numToStr/Comment.nvim")
 
-
     -- Adding file explorer
     use("nvim-tree/nvim-tree.lua")
 
+    -- Fuzzy finding w/ telescope
+    use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
+    use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
 
     -- Suggested by the Packer docs
     if packer_bootstrap then
