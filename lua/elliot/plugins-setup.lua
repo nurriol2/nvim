@@ -30,9 +30,28 @@ return packer.startup(function(use)
     -- Install Packer
     use("wbthomason/packer.nvim")
 
+    -- (Many other plugins rely on plenary)
+    use("nvim-lua/plenary.nvim")
+
+
     -- Install colorscheme
     use { "bluz71/vim-moonfly-colors", as = "moonfly" }
 
+    -- Split window navigation (CTRL is a modifier now)
+    use("christoomey/vim-tmux-navigator")
+
+    -- Min and restore current window (Modify keymaps now)
+    use("szw/vim-maximizer")
+
+    -- (Grab surrounding stuff, like parenthesis and quotes)
+    use("tpope/vim-surround")
+
+    -- (Comfy) Commenting
+    use("numToStr/Comment.nvim")
+
+
+    -- Adding file explorer
+    use("nvim-tree/nvim-tree.lua")
 
 
     -- Suggested by the Packer docs
