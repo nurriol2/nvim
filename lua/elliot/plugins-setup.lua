@@ -48,6 +48,9 @@ return packer.startup(function(use)
     -- (Comfy) Commenting
     use("numToStr/Comment.nvim")
 
+    -- Lualine Statusline
+    use("nvim-lualine/lualine.nvim")
+
     -- Adding file explorer
     use("nvim-tree/nvim-tree.lua")
 
