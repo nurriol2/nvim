@@ -84,7 +84,13 @@ return packer.startup(function(use)
     -- Bridge the gap b/n mason & lspconfig
     use("williamboman/mason-lspconfig.nvim")
 
+    -- LSP servers appear in autocompletion
+    use("hrsh7th/cmp-nvim-lsp")
+    -- UIs for LSP 
+    use({ "glepnir/lspsaga.nvim", branch = "main" })
     
+
+
     -- Suggested by the Packer docs
     if packer_bootstrap then
         require("packer").sync()
