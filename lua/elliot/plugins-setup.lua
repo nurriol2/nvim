@@ -77,12 +77,12 @@ return packer.startup(function(use)
     use("saadparwaiz1/cmp_luasnip") -- for autocompletion
     use("rafamadriz/friendly-snippets") -- useful snippets
 
-    -- -- Manage 
-    -- use("williamboman/mason.nvim")
-    -- -- Configure LSP servers
-    -- use("neovim/nvim-lspconfig")
-    -- -- Bridge the gap b/n mason & lspconfig
-    -- use("williamboman/mason-lspconfig.nvim")
+    -- Manage 
+    use("williamboman/mason.nvim")
+    -- Configure LSP servers
+    use("neovim/nvim-lspconfig")
+    -- Bridge the gap b/n mason & lspconfig
+    use("williamboman/mason-lspconfig.nvim")
 
     
     -- Suggested by the Packer docs
