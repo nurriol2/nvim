@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
+local opts = {buffer = 0}
 
 -- Comfy keymap to escape INSERT mode 
 keymap.set("i", "jk", "<ESC>")
@@ -41,3 +42,7 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+
+-- ToggleTerm
+keymap.set("n", "<leader>tt", ":ToggleTerm<CR>") -- Open terminal horizontally
+keymap.set("t", "<leader>tt", "<C-\\><C-n>") -- Leave Terminal mode 
