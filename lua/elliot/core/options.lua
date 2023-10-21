@@ -38,3 +38,5 @@ opt.clipboard:append("unnamedplus")
 -- Configure split window options
 opt.splitright = true
 opt.splitbelow = true
+
+opt.hidden = true
