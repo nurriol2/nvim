@@ -89,7 +89,11 @@ return packer.startup(function(use)
     -- UIs for LSP 
     use({ "glepnir/lspsaga.nvim", branch = "main" })
     
-
+    -- ToggleTerm
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end
+    }
 
     -- Suggested by the Packer docs
     if packer_bootstrap then
